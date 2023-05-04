@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python -c "import ferminet; print(ferminet.__path__[0])"
