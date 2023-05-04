@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+output=( $(sbatch $1) )
+tail -F slurm-${output[3]}.out
