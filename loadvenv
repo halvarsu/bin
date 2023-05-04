@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+if [ -z $1 ]; then
+  echo "ERROR: Need an argument"
+  exit 1
+fi
+echo "Did you remember to load correct Python module before loading this"
+source $ENVS/$1/bin/activate
